@@ -10,6 +10,10 @@ namespace RPSv2
     {
         static void Main(string[] args)
         {
+            Game Open = new Game();
+            Open.StartGame();
+            Console.ReadLine();
+
         }
     }
 }
