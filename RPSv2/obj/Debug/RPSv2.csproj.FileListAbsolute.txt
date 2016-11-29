@@ -1,0 +1,6 @@
+c:\users\nik d\documents\visual studio 2015\Projects\RPSv2\RPSv2\bin\Debug\RPSv2.exe.config
+c:\users\nik d\documents\visual studio 2015\Projects\RPSv2\RPSv2\bin\Debug\RPSv2.exe
+c:\users\nik d\documents\visual studio 2015\Projects\RPSv2\RPSv2\bin\Debug\RPSv2.pdb
+c:\users\nik d\documents\visual studio 2015\Projects\RPSv2\RPSv2\obj\Debug\RPSv2.csprojResolveAssemblyReference.cache
+c:\users\nik d\documents\visual studio 2015\Projects\RPSv2\RPSv2\obj\Debug\RPSv2.exe
+c:\users\nik d\documents\visual studio 2015\Projects\RPSv2\RPSv2\obj\Debug\RPSv2.pdb
