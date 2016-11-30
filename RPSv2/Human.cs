@@ -17,20 +17,20 @@ namespace RPSv2
             string duh = (Console.ReadLine().ToLower());
             switch(duh)
             {
-                case "spock":
-                    choice = 0;
-                    return choice;
                 case "rock":
                     choice = 1;
                     return choice;
-                case "lizard":
+                case "paper":
                     choice = 2;
                     return choice;
                 case "scissors":
                     choice = 3;
                     return choice;
-                case "paper":
+                case "lizard":
                     choice = 4;
+                    return choice;
+                case "spock":
+                    choice = 5;
                     return choice;
                     
                 default:

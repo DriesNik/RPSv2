@@ -15,16 +15,45 @@ namespace RPSv2
             LaunchIntro();
             ExplainRules();
             GetNumberOfPlayers();
-            GrabChoices();
-            CompareChoices();
-
+            while ((playerOne.GetScore() < 2) && (playerTwo.GetScore() < 2))
+            {
+                GrabChoices();
+                CompareChoices();
+            }
+            EndGame();
         }
 
+        private string EndGame()
+        {
+            string ending;
+            Console.WriteLine("Would you like to Play Again? Y/N");
+            ending = (Console.ReadLine());
+            if (ending == "y" )
+            {
+                StartGame();
+                return "hoi";
+            }
+            else if ( ending == "n")
+            {
+                return "hoi";
+            }
+            else
+            {
+                Console.WriteLine("Invalid Choice");
+                EndGame();
+                return "hoi";
+            }
+        }
+
+        
+
+       
+        
         private void CompareChoices()
         {
             
             int d;
-            d = (5 + playerOne.FinalChoice() - playerTwo.FinalChoice() % 5);
+            d = ((5 + playerOne.FinalChoice() - playerTwo.FinalChoice()) % 5);
 
             if (d == 0)
             {
