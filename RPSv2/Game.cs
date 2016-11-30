@@ -113,7 +113,7 @@ namespace RPSv2
         private void ExplainRules()
         {
             Console.WriteLine("The Object is to Win two times. \n Rock beats Scissors and Lizard \n Paper beats Rock and Spock");
-            Console.WriteLine("Scissors beats Paper and Lizard \n Spock beats Scissors and Rock \n Lizard beats Paper and Spock");
+            Console.WriteLine(" Scissors beats Paper and Lizard \n Spock beats Scissors and Rock \n Lizard beats Paper and Spock");
         }
 
         private void LaunchIntro()

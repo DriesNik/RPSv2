@@ -17,7 +17,7 @@ namespace RPSv2
 
         public override int GetChoice()
         {
-            Console.WriteLine("Make your Choice");
+            Console.WriteLine("Make your Choice: "  + name);
             Console.WriteLine("Lizard Spock Scissors Paper Rock");
             string duh = (Console.ReadLine().ToLower());
             switch(duh)
