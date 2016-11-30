@@ -8,28 +8,62 @@ namespace RPSv2
 {
     class Game
     {
+        Player playerOne;
+        Player playerTwo;
         public void StartGame()
         {
             LaunchIntro();
             ExplainRules();
             GetNumberOfPlayers();
+            GrabChoices();
+            CompareChoices();
 
         }
 
-        private void GetNumberOfPlayers()
+        private void CompareChoices()
+        {
+            
+            int d;
+            d = (5 + playerOne.FinalChoice() - playerTwo.FinalChoice() % 5);
+
+            if (d == 0)
+            {
+                Console.WriteLine("Tie");
+            }
+            else if(d % 2 == 1)
+            {
+                Console.WriteLine("Player One Wins");
+                playerOne.AddScore();
+
+            }
+            else if (d % 2 == 0)
+            {
+                Console.WriteLine("PlayerTwo Wins");
+                playerTwo.AddScore();
+            }
+
+        }
+
+        private void GrabChoices()
+        {
+            playerOne.GetChoice();
+            playerTwo.GetChoice();
+        }
+
+        public void GetNumberOfPlayers()
         {
             string NumberOfPlayers;
             Console.WriteLine("How many players would you like? 1 or 2");
             NumberOfPlayers = Console.ReadLine();
             if (NumberOfPlayers == "1")
                 {
-                Player playerOne = new Human();
-                Player playerTwo = new Computer();
+                playerOne = new Human();
+                playerTwo = new Computer();
                 }
             else if (NumberOfPlayers == "2")
             {
-                Player playerOne = new Human();
-                Player playerTwo = new Computer();
+                playerOne = new Human();
+                playerTwo = new Human();
             }
             else
             {

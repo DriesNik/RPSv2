@@ -8,16 +8,26 @@ namespace RPSv2
 {
     class Player
     {
-        protected int score;
-        protected string choice;
+        protected int score = 0;
+        protected int choice;
 
         public int GetScore()
         {
             return score;
         }
-        public string GetChoice()
+        public virtual int GetChoice()
         {
             return choice;
         }
+        public int AddScore()
+        {
+            score++;
+            return score;
+        }
+        public virtual int FinalChoice()
+        {
+            return choice;
+        }
+        
     }
 }
