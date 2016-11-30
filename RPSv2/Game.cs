@@ -15,12 +15,19 @@ namespace RPSv2
             LaunchIntro();
             ExplainRules();
             GetNumberOfPlayers();
+            CollectNames();
             while ((playerOne.GetScore() < 2) && (playerTwo.GetScore() < 2))
             {
                 GrabChoices();
                 CompareChoices();
             }
             EndGame();
+        }
+
+        private void CollectNames()
+        {
+            playerOne.GetName();
+            playerTwo.GetName();
         }
 
         private string EndGame()
@@ -61,13 +68,13 @@ namespace RPSv2
             }
             else if(d % 2 == 1)
             {
-                Console.WriteLine("Player One Wins");
+                Console.WriteLine( playerOne.UseName()+ " Wins");
                 playerOne.AddScore();
 
             }
             else if (d % 2 == 0)
             {
-                Console.WriteLine("PlayerTwo Wins");
+                Console.WriteLine(playerTwo.UseName()+ " Wins");
                 playerTwo.AddScore();
             }
 
@@ -105,8 +112,8 @@ namespace RPSv2
 
         private void ExplainRules()
         {
-            Console.WriteLine("The Rules Go here for now");
-
+            Console.WriteLine("The Object is to Win two times. \n Rock beats Scissors and Lizard \n Paper beats Rock and Spock");
+            Console.WriteLine("Scissors beats Paper and Lizard \n Spock beats Scissors and Rock \n Lizard beats Paper and Spock");
         }
 
         private void LaunchIntro()

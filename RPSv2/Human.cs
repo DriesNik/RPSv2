@@ -8,12 +8,17 @@ namespace RPSv2
 {
     class Human : Player
     {
-
+        public override string GetName()
+        {
+            Console.WriteLine("Please Enter Your Name");
+            name = Console.ReadLine();
+            return name;
+        }
 
         public override int GetChoice()
         {
-            Console.WriteLine(" Make your Choice");
-            Console.WriteLine(" Lizard Spock Scissors Paper Rock");
+            Console.WriteLine("Make your Choice");
+            Console.WriteLine("Lizard Spock Scissors Paper Rock");
             string duh = (Console.ReadLine().ToLower());
             switch(duh)
             {

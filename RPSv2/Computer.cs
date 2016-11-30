@@ -8,6 +8,11 @@ namespace RPSv2
 {
     class Computer : Player
     {
+        public override string GetName()
+        {
+            name = "The Computer";
+            return name;
+        }
         public override int GetChoice()
         {
 

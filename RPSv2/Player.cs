@@ -10,10 +10,16 @@ namespace RPSv2
     {
         protected int score = 0;
         protected int choice;
+        protected string name;
+
 
         public int GetScore()
         {
             return score;
+        }
+        public string UseName()
+        {
+            return name;
         }
         public virtual int GetChoice()
         {
@@ -27,6 +33,10 @@ namespace RPSv2
         public virtual int FinalChoice()
         {
             return choice;
+        }
+        public virtual string GetName()
+        {
+            return name;
         }
         
     }

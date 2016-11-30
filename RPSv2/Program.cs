@@ -12,7 +12,7 @@ namespace RPSv2
         {
             Game Open = new Game();
             Open.StartGame();
-            Console.ReadLine();
+            
 
         }
     }
